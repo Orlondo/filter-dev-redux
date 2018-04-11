@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+.listingsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+} 
+
+.card {
+    background: #eeeeee;
+    padding: 1em;
+    margin: 1em;
+    // max-width: 640px;
+    width: 360px;
+    max-height: 360px;
+
+    .price,
+    .bedrooms {
+        font-size: 1.0rem;
+    }
+
+}
+
+.imageContainer {
+    background: aliceblue;
+    height: 200px;    
+    width: 100%;
+    overflow: hidden;
+
+    img {
+       width: 100%;
+    }
+}
+
+.formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: beige;
+    padding: 10px;
+    -webkit-box-shadow: -2px 5px 5px -4px rgba(82,82,82,1);
+    -moz-box-shadow: -2px 5px 5px -4px rgba(82,82,82,1);
+    box-shadow: -2px 5px 5px -4px rgba(82,82,82,1);
+}
+
+.formContainer > div {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+}
+
+label {
+    padding-right: 10px;
+}
+
+input {
+    margin-top: -7px;
+}
+
+@media (max-width: 1000px) {
+    .formContainer > div {
+        flex: 100%;
+        justify-content: space-between;
+    }
+    
+    .listingsContainer {
+        margin-top: 190px;
+    }
+    
+    input {
+        flex-grow: 2;
+        max-width: 75%;
+        margin-top: 0px;
+    }
+}
+
+button {
+    padding: .5rem .50rem;
+    font-weight: bolder;
+    margin-top: -7px;
+}
+  
+
+

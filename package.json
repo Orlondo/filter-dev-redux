@@ -1,0 +1,41 @@
+{
+  "name": "ui-code-test",
+  "version": "1.0.0",
+  "description": "Deepfield UI Code Test",
+  "main": "index.js",
+  "author": "Eric Krawczyk",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server/index.js --ignore dist/ --ignore public/",
+    "build": "webpack --watch",
+    "dev-server": "webpack-dev-server"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "express": "^4.16.2",
+    "html-webpack-plugin": "^3.1.0",
+    "node-sass": "^4.8.3",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11",
+    "parcel-bundler": "^1.5.1"
+  }
+}
